@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!--関わってくるやつ-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <h1>電卓を作りたかった...</h1>
+    <style>
+      h1{
+        font-size: 30px;
+        color: rgba(212, 212, 212, 0.952);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+ 
+      <button v-on:click="showMessage1">1</button>
+      <button v-on:click="showMessage2">2</button>
+      <button v-on:click="showMessage3">3</button>
+      <p></p>
+      <button v-on:click="showMessage4">4</button>
+      <button v-on:click="showMessage5">5</button>
+      <button v-on:click="showMessage6">6</button>
+      <p></p>
+      <button v-on:click="showMessage7">7</button>
+      <button v-on:click="showMessage8">8</button>
+      <button v-on:click="showMessage9">9</button>
+      <p></p>
+      <button v-on:click="showMessage0">0</button>
+      <p></p>
+      <button v-on:click="showMessage10">+</button>
+      <button v-on:click="showMessage11">-</button>
+      <button v-on:click="showMessage12">*</button>
+      <button v-on:click="showMessage13">/</button>
+      <button v-on:click="showMessage14">=</button>
+      <p></p>
+      <b>{{ msg1 }}</b>
+      <p>{{ msg2 }}{{ msg3 }}</p>
+
+    </div>
+  </body>
+</html>
+
+<script src="index.js"></script>
